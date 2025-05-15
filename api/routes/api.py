@@ -1,8 +1,8 @@
 from flask import Blueprint, jsonify, request, g 
-from models.models import db, AvailableAccount, GeneratedAccount, User
-from utils.email_checker import get_mx_for_domain, check_email_availability_with_retry
-from utils.account_generator import generate_username_from_name ,fetch_random_user
-from utils.password_generator import generate_random_password
+from api.models.models import db, AvailableAccount, GeneratedAccount, User
+from api.utils.email_checker import get_mx_for_domain, check_email_availability_with_retry
+from api.utils.account_generator import generate_username_from_name ,fetch_random_user
+from api.utils.password_generator import generate_random_password
 from datetime import datetime
 from functools import wraps
 

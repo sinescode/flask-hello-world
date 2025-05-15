@@ -1,7 +1,7 @@
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 import secrets
-from extensions import db  # Import from extensions.py
+from api.extensions import db  # Import from extensions.py
 
 
 class User(db.Model):

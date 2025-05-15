@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, send_file, g ,request
-from models.models import db, AvailableAccount, GeneratedAccount, User
+from api.models.models import db, AvailableAccount, GeneratedAccount, User
 import pandas as pd
 from io import BytesIO
 from datetime import datetime, timezone, timedelta

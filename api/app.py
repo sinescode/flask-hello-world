@@ -1,11 +1,11 @@
 from flask import Flask, send_from_directory, g
-from config import Config
-from extensions import db, Base
+from api.config import Config
+from api.extensions import db, Base
 from flask_cors import CORS
-from models.models import User, AvailableAccount, GeneratedAccount
-from routes.accounts import accounts_bp
-from routes.api import api_bp
-from routes.auth import auth_bp
+from api.models.models import User, AvailableAccount, GeneratedAccount
+from api.routes.accounts import accounts_bp
+from api.routes.api import api_bp
+from api.routes.auth import auth_bp
 
 
 def create_app():
