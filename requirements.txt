@@ -1,1 +1,11 @@
-Flask==3.0.3
+flask
+flask_cors
+flask_sqlalchemy
+requests
+sqlalchemy
+python-dotenv
+psycopg2-binary
+dnspython
+pandas
+xlsxwriter
+openpyxl
